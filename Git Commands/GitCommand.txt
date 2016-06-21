@@ -46,7 +46,20 @@ git push
 
 
 ---------------------------------------------------------------------------------------------------
+Creating and Verifying tag
 
+ 1. Create tag without message
+     git tag v1.0-beta1.0
+	 
+ 2. Create tag with message using -a option .Where a means annotation
+
+    git tag -a v1.0-beta1.1 
+	
+3. View all tags
+    git tag
+	
+
+---------------------------------------------------------------------------------------------------
 git show HEAD = Show last commit
 git show HEAD~10 = 
 
