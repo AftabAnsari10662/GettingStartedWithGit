@@ -19,7 +19,7 @@ git config --list
 git config --unset core.autocrlf 
 ----------------------------------------------------------------------------------------------
 
-Remote Repo Association
+fetching from a remote
 git remote -v
 git remote add origin https://github.com/aftab10662/LearningGit.git
 git remote rm origin
@@ -27,7 +27,7 @@ git fetch
 git merge origin/master
 
 --------------------------------------------------------------------------------------------------
-Pulling from Remote
+Pulling from a Remote
 
 git branch -r
 	git fetch 
@@ -35,9 +35,18 @@ git branch -r
 	
 	git pull- if does not work
 	git pull --set-upstream master origin/master
-	
+	git fetch 
 
 ---------------------------------------------------------------------------------------------------
+Pushing to a remote
+
+echo "Modify file">>Readme.txt
+git commit -am "Pusing to remote"
+git push
+
+
+---------------------------------------------------------------------------------------------------
+
 git show HEAD = Show last commit
 git show HEAD~10 = 
 
