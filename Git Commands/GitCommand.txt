@@ -26,8 +26,18 @@ git remote rm origin
 git fetch 
 git merge origin/master
 
+--------------------------------------------------------------------------------------------------
+Pulling from Remote
 
+git branch -r
+	git fetch 
+	git merge origin master
+	
+	git pull- if does not work
+	git pull --set-upstream master origin/master
+	
 
+---------------------------------------------------------------------------------------------------
 git show HEAD = Show last commit
 git show HEAD~10 = 
 
