@@ -63,6 +63,14 @@ Pushing tags to a remote
  git push --tags
 
 ---------------------------------------------------------------------------------------------------
+Creating local branches
+
+git branch new-feature
+git checkout new-feature
+git branch
+
+
+--------------------------------------------------------------------------------------------------
 git show HEAD = Show last commit
 git show HEAD~10 = 
 
