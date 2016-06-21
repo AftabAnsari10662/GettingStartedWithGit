@@ -54,10 +54,13 @@ Creating and Verifying tag
  2. Create tag with message using -a option .Where a means annotation
 
     git tag -a v1.0-beta1.1 
+	git tag -m "Beta Release" beta-1.0
 	
 3. View all tags
     git tag
-	
+---------------------------------------------------------------------------------------------------
+Pushing tags to a remote
+ git push --tags
 
 ---------------------------------------------------------------------------------------------------
 git show HEAD = Show last commit
