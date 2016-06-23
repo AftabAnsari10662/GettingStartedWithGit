@@ -78,7 +78,15 @@ git branch -d bug1234
 git branch -D bug1234
 
 git checkout -b feature2 = Create branch and do checkout also.
+
 ---------------------------------------------------------------------------------------------
+Recovring deleted commits
+git reflog
+git branch fix1 bbf9382
+git checkout fix1
+git show head
+
+-----------------------------------------------------------------------------
 git show HEAD = Show last commit
 git show HEAD~10 = 
 
