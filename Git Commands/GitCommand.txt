@@ -71,6 +71,14 @@ git branch
 
 
 --------------------------------------------------------------------------------------------------
+Renaming and deleting branches
+git branch -m fix1 bug1234
+
+git branch -d bug1234
+git branch -D bug1234
+
+
+---------------------------------------------------------------------------------------------
 git show HEAD = Show last commit
 git show HEAD~10 = 
 
