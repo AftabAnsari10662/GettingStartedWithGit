@@ -11,6 +11,8 @@ Team is implementing new features!!
 They are writing more code.
 Looks like the new feature is very vital to the application.
 
+
+Missed one small checkins.
 Some issue has been reported in ET/QA.
 So team is doing fixes on this branch.
 After we need to merge into master branch.
