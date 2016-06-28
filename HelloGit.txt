@@ -6,12 +6,14 @@ And Learning Git DVC.
 Rebasing is little bit difficult and hard.
 P r o d u c t i o n   i s s u e   f i x e d  
  Q A   P a t c h   R e l e a s e  
- D a i l y   C h e c k i n s  
+ D a i l y   C h e c k i n s
+Team is implementing Core Identity features.
+Team is implementing Core Authrozation features.  
 Team is implementing new features!!
 They are writing more code.
 Looks like the new feature is very vital to the application.
-
-
+Team is following agile.
+This white space has been left blank intentionaly.
 Missed one small checkins.
 Some issue has been reported in ET/QA.
 So team is doing fixes on this branch.
