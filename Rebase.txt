@@ -1,1 +1,2 @@
 Learn Rebase in Git World.
+Now i am inside Rebase-branch.
