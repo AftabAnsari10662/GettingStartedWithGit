@@ -112,6 +112,13 @@ git push
 
 
 ----------------------------------------------------------------------------
+Modify the commit.
+
+git add greeter.txt
+git commit --amend -m "new commit message"
+
+
+---------------------------------------------------------------------------
 git show HEAD = Show last commit
 git show HEAD~10 = 
 
