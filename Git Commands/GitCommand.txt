@@ -1,16 +1,16 @@
-Create a new repository on the command line
+##Create a new repository on the command line
 
-echo "# LearnPowerShell" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/aftab10662/LearnPowerShell.git
-git push -u origin master
-Or push an existing repository from the command line
+* `echo "# Getting Started with Git" >> README.md`
+* `git init`
+* `git add README.md`
+* `git commit -m "first commit"`
+* `git remote add origin https://github.com/aftab10662/GettingStartedWithGit.git`
+* `git push -u origin master`
 
-git remote add origin https://github.com/aftab10662/LearnPowerShell.git
-git push -u origin master
---------------------------------------------------------------------------------------------
+##Or push an existing repository from the command line
+* `git remote add origin https://github.com/aftab10662/GettingStartedWithGit.git`
+* `git push -u origin master`
+
 User Level Configuration
 ~/.gitconfig
 cat ~/.gitconfig
