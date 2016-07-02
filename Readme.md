@@ -93,22 +93,22 @@ git branch -D bug1234
 git checkout -b feature2 = Create branch and do checkout also.
 
 ---------------------------------------------------------------------------------------------
-Recovring deleted commits
-git reflog
-git branch fix1 bbf9382
-git checkout fix1
-git show head
+##Recovring deleted commits
+* `git reflog`
+* `git branch fix1 bbf9382`
+* `git checkout fix1`
+* `git show head`
 
 -----------------------------------------------------------------------------
-Rebasing 
+##Rebasing 
 
-git branch extra-feaures beta-1.0
-git "Rebasing">>HelloGit.txt
-git Commit -am "Rebasing Git "
-git rebase master
-git checkout master
-git merge extra-feaures
-git push
+* `git branch extra-feaures beta-1.0`
+* `git "Rebasing">>HelloGit.txt`
+* `git Commit -am "Rebasing Git "`
+* `git rebase master`
+* `git checkout master`
+* `git merge extra-feaures`
+* `git push`
 
 
 ----------------------------------------------------------------------------
