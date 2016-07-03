@@ -1,46 +1,46 @@
 ##Create a new repository on the command line
 
-* `echo "# Getting Started with Git" >> README.md`
-* `git init`
-* `git add README.md`
-* `git commit -m "first commit"`
-* `git remote add origin https://github.com/aftab10662/GettingStartedWithGit.git`
-* `git push -u origin master`
+	echo "# Getting Started with Git" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin https://github.com/aftab10662/GettingStartedWithGit.git
+	git push -u origin master
 
-##Or push an existing repository from the command line
-* `git remote add origin https://github.com/aftab10662/GettingStartedWithGit.git`
-* `git push -u origin master`
+###Or push an existing repository from the command line
+	git remote add origin https://github.com/aftab10662/GettingStartedWithGit.git
+	git push -u origin master
 
-User Level Configuration
-~/.gitconfig
-cat ~/.gitconfig
-git config --global user.name = "Aftab Ansari"
-git config --global user.email = "AftabAnsari10662@gmail.com"
-git config --global --list
-git config --global help.autocorrect 1
-git config --global code.editor vim
-git config --global color.ui auto
-git config --global core.autocrlf true
---------------------------------------------------------------------------------------------
+###User Level Configuration
+	~/.gitconfig
+	cat ~/.gitconfig
+	git config --global user.name = "Aftab Ansari"
+	git config --global user.email = "AftabAnsari10662@gmail.com"
+	git config --global --list
+	git config --global help.autocorrect 1
+	git config --global code.editor vim
+	git config --global color.ui auto
+	git config --global core.autocrlf true
 
-Repository Level Configuration
 
-git config
-stored in .git/config in each Repository.
-git config user.name "Aftab"
-git config --list
-git config --unset core.autocrlf 
-----------------------------------------------------------------------------------------------
+###Repository Level Configuration
 
-fetching from a remote
-git remote -v
-git remote add origin https://github.com/aftab10662/LearningGit.git
-git remote rm origin
-git fetch 
-git merge origin/master
+	git config
+	stored in .git/config in each Repository.
+	git config user.name "Aftab"
+	git config --list
+	git config --unset core.autocrlf 
 
---------------------------------------------------------------------------------------------------
-Pulling from a Remote
+
+###fetching from a remote
+	git remote -v
+	git remote add origin https://github.com/aftab10662/LearningGit.git
+	git remote rm origin
+	git fetch 
+	git merge origin/master
+
+
+###Pulling from a Remote
 
     git branch -r
 	git fetch 
@@ -50,15 +50,14 @@ Pulling from a Remote
 	git pull --set-upstream master origin/master
 	git fetch 
 
----------------------------------------------------------------------------------------------------
-Pushing to a remote
 
-echo "Modify file">>Readme.txt
-git commit -am "Pusing to remote"
-git push
+###Pushing to a remote
+
+	echo "Modify file">>Readme.txt
+	git commit -am "Pusing to remote"
+	git push
 
 
----------------------------------------------------------------------------------------------------
 Creating and Verifying tag
 
  1. Create tag without message
@@ -71,50 +70,49 @@ Creating and Verifying tag
 	
 3. View all tags
     git tag
----------------------------------------------------------------------------------------------------
-Pushing tags to a remote
- git push --tags
 
----------------------------------------------------------------------------------------------------
-Creating local branches
-
-git branch new-feature
-git checkout new-feature
-git branch
+###Pushing tags to a remote
+	git push --tags
 
 
---------------------------------------------------------------------------------------------------
-Renaming and deleting branches
-git branch -m fix1 bug1234
+###Creating local branches
 
-git branch -d bug1234
-git branch -D bug1234
+	git branch new-feature
+	git checkout new-feature
+	git branch
+	
 
-git checkout -b feature2 = Create branch and do checkout also.
+###Renaming and deleting branches
+	git branch -m fix1 bug1234
+	git branch -d bug1234	
+	git branch -D bug1234
 
----------------------------------------------------------------------------------------------
-##Recovring deleted commits
-* `git reflog`
-* `git branch fix1 bbf9382`
-* `git checkout fix1`
-* `git show head`
-
------------------------------------------------------------------------------
-##Rebasing 
-
-* `git branch extra-feaures beta-1.0`
-* `git "Rebasing">>HelloGit.txt`
-* `git Commit -am "Rebasing Git "`
-* `git rebase master`
-* `git checkout master`
-* `git merge extra-feaures`
-* `git push`
+###Create branch and do checkout also.	
+	git checkout -b feature2
 
 
-----------------------------------------------------------------------------
-##Cherry picking
+###Recovring deleted commits
+	git reflog
+	git branch fix1 bbf9382
+	git checkout fix1
+	git show head
 
-* `git cherry-pick $(git merge-base master QA-Patch-Release).. QA-Patch-Release`
+
+###Rebasing 
+
+	git branch extra-feaures beta-1.0
+	git "Rebasing">>HelloGit.txt
+	git Commit -am "Rebasing Git "
+	git rebase master
+	git checkout master
+	git merge extra-feaures
+	git push
+
+
+
+###Cherry picking
+
+	git cherry-pick $(git merge-base master QA-Patch-Release).. QA-Patch-Release
 
 
 ### How to check which branches are merged
@@ -128,41 +126,42 @@ git checkout -b feature2 = Create branch and do checkout also.
     git log --merges QA-Patch-Release..master
 
 
-##Modify the commit.
+###Modify the commit.
 
-* `git add greeter.txt`
-* `git commit --amend -m "new commit message"`
+	git add greeter.txt`
+	git commit --amend -m "new commit message"`
 
 
----------------------------------------------------------------------------
+
 git show HEAD = Show last commit
 git show HEAD~10 = 
 
 
 git commit -am "message"
+### How to create branch and checkout and push local branch to remote
+	git branch V1.0_Beta-Branch
+	git branch - View all local branches.
+	git branch -r -- View all Remote branches.
+	git branch --all
+	git checkout V1.0_Beta-Branch
+	git push origin V1.0_Beta-Branch
+	git branch -r
 
-git branch V1.0_Beta-Branch
-git branch - View all local branches.
-git branch -r -- View all Remote branches.
-git branch --all
-git checkout V1.0_Beta-Branch
-git push origin V1.0_Beta-Branch
-git branch -r
+### How to create tag and push tag to remote
 
-git tag V1.0
-git tag -a V1.0_With_Message
-git tag- View All Tag
-git push --tag
+	git tag V1.0
+	git tag -a V1.0_With_Message
+	git tag- View All Tag
+	git push --tag
 
-git pull origin master
+	git pull origin master
 
-git remote rm origin
-git remote
-git remote -v - View All associated Remote Repository
-git remote add origin git@github.com:aftab10662/LearningGit.git
-git remote add origin https://github.com/aftab10662/Learning.git
-
-git branch --set-upstream master origin/master.
+	git remote rm origin
+	git remote
+	git remote -v - View All associated Remote Repository
+	git remote add origin git@github.com:aftab10662/LearningGit.git
+	git remote add origin https://github.com/aftab10662/Learning.git
+	git branch --set-upstream master origin/master.
 
 
 
@@ -178,34 +177,29 @@ git push --tag.
 
 git fetch origin;git merge origin/master; = git pull origin;
 
-
-git log --graph --online
-git log --graph --oneline --all --decorate
-git config --global alias.gla "log --graph --oneline --all --decorate"
+### How to see log
+	git log --graph --online
+	git log --graph --oneline --all --decorate
+	git config --global alias.gla "log --graph --oneline --all --decorate"
  
  
- Using Alias
+###Using Alias
  
- git config alias.st status
- git config --global alias.co checkout
- git config --global alias.cma "commit --all -m"
-
-git show-ref --heads
-git branch -d V2.0_Beta
-
+	git config alias.st status
+	git config --global alias.co checkout
+	git config --global alias.cma "commit --all -m"
+	git show-ref --heads
+	git branch -d V2.0_Beta
 
 
-
-Sync Local forked Repo with MAster Repo
->git remote -v
-git aspnet fetch
-git checkout master
-git merge aspnet/master
-git rebase aspnet/master
-git push origin master
-
-git commit -am "Merge Conflicts Resolvedx`"
-
-git branch ng2-fix 77b1b35
+###Sync Local forked Repo with MAster Repo
+	git remote -v
+	git aspnet fetch
+	git checkout master
+	git merge aspnet/master
+	git rebase aspnet/master
+	git push origin master
+	git commit -am "Merge Conflicts Resolvedx`"
+	git branch ng2-fix 77b1b35
 
 
