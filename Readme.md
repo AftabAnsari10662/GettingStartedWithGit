@@ -112,10 +112,15 @@ git checkout -b feature2 = Create branch and do checkout also.
 
 
 ----------------------------------------------------------------------------
-Modify the commit.
+##Cherry picking
 
-git add greeter.txt
-git commit --amend -m "new commit message"
+* `git cherry-pick $(git merge-base master QA-Patch-Release).. QA-Patch-Release`
+
+
+##Modify the commit.
+
+* `git add greeter.txt`
+* `git commit --amend -m "new commit message"`
 
 
 ---------------------------------------------------------------------------
