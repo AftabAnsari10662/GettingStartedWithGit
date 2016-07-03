@@ -42,10 +42,10 @@ git merge origin/master
 --------------------------------------------------------------------------------------------------
 Pulling from a Remote
 
-git branch -r
+    git branch -r
 	git fetch 
 	git merge origin master
-	
+
 	git pull- if does not work
 	git pull --set-upstream master origin/master
 	git fetch 
@@ -115,6 +115,17 @@ git checkout -b feature2 = Create branch and do checkout also.
 ##Cherry picking
 
 * `git cherry-pick $(git merge-base master QA-Patch-Release).. QA-Patch-Release`
+
+
+### How to check which branches are merged
+
+	git branch --merged
+
+### How to check which branches are not merged
+
+	git branch --no-merged
+	git show-branch --topic master QA-Patch-Release Beta-V3.0.0.0-beta1
+    git log --merges QA-Patch-Release..master
 
 
 ##Modify the commit.
