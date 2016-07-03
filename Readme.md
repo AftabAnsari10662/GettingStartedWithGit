@@ -201,4 +201,11 @@ git commit -am "message"
 	git commit -am "Merge Conflicts Resolvedx`"
 	git branch ng2-fix 77b1b35
 
-
+### Tracking Authors
+	git log --author="Aftab Ansari"
+	git log -1 --pretty=fuller
+	git log --committer="Aftab Ansari"
+	git log --author="Aftab Ansari" --since ="1 week"
+	git shortlog -s -n | head -10
+	
+	
