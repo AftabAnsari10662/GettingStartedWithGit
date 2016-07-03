@@ -165,17 +165,16 @@ git commit -am "message"
 
 
 
-
-git fetch- fetch from Remote Repo.
-git fetch origin -- fetch if you have multiple remote.
-git push - push to remote Repo.
-git push origin - if you have multiple remote.
-
-git pull origin master- pull form remote origin branch.
-
-git push --tag.
-
-git fetch origin;git merge origin/master; = git pull origin;
+### Push and Fetch of branches and tags
+	git fetch- fetch from Remote Repo.
+	git fetch origin -- fetch if you have multiple remote.
+	git push - push to remote Repo.
+	git push origin - if you have multiple remote.
+	git pull origin master- pull form remote origin branch.
+	git push --tag - push tag tor remote 
+	git fetch origin
+	git merge origin/master
+	git pull origin;
 
 ### How to see log
 	git log --graph --online
