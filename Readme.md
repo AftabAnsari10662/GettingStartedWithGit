@@ -208,4 +208,12 @@ git commit -am "message"
 	git log --author="Aftab Ansari" --since ="1 week"
 	git shortlog -s -n | head -10
 	
+### Statistics
+    
+	git log --oneline --graph
+	git log --oneline | wc -l
+	git shortlog
+    git shortlog -sne
 	
+	
+    	
