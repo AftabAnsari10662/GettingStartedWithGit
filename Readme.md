@@ -177,7 +177,7 @@ git commit -am "message"
 	git pull origin;
 
 ### How to see log
-	git log --graph --online
+	git log --graph --oneline
 	git log --graph --oneline --all --decorate
 	git config --global alias.gla "log --graph --oneline --all --decorate"
  
