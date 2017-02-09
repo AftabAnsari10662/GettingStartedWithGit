@@ -42,7 +42,7 @@
 	// Merge by deciding how to resolve the conflict.
 	git merge -X ours origin/demo || die "complex merge conflict"
         git branch -a // list all remote branches
-	
+	git pull --all //pull all local branches tracking remote branches
 
 ###Pulling from a Remote
 
