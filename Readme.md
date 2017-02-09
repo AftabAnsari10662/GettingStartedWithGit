@@ -38,6 +38,9 @@
 	git remote rm origin
 	git fetch 
 	git merge origin/master
+	git merge -X theirs origin/demo || die "complex merge conflict"
+	// Merge by deciding how to resolve the conflict.
+	git merge -X ours origin/demo || die "complex merge conflict"
 
 
 ###Pulling from a Remote
