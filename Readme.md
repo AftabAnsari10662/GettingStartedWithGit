@@ -221,3 +221,10 @@ git commit -am "message"
 	
 	
     	
+### Undoing Chnages to the Working Copy
+    git checkout ReadMe.md
+    git reset --hard
+
+   git reset --soft HEAD~1
+   git reset --hard HEAD~1
+   git clean -f
