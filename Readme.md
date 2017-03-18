@@ -228,3 +228,10 @@ git commit -am "message"
    git reset --soft HEAD~1
    git reset --hard HEAD~1
    git clean -f
+
+### Stashing Changes
+    git stash
+    git stash apply
+    git stash pop
+    git stash list
+    git stash branch feature2_branch
